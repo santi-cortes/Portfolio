@@ -11874,7 +11874,6 @@ section.resume-section .resume-section-content {
 	background-color: transparent;
 	border-radius: 10px;
 	border: var(--bs-gray-400) solid 1px;
-	overflow: hidden;
 }
 
 .frame-project hr {
@@ -11960,4 +11959,62 @@ a img {
 
 .lang:hover {
 	color: #0d6efd !important;
+}
+
+#canvas-container {
+	position: absolute;
+	top: -110px;
+	right: -110px;
+}
+
+@media (max-width: 1250px) {
+	.text-principal {
+		width: 400px !important;
+	}
+	#canvas-container {
+		top: -100px;
+		right: -100px;
+	}
+	#canvas-container canvas {
+		width: 550px !important;
+		height: 550px !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.text-principal {
+		width: 100% !important;
+	}
+	#canvas-container {
+		top: -120px !important;
+	}
+	#canvas-container canvas {
+		width: 400px !important;
+		height: 400px !important;
+	}
+}
+
+@media (max-width: 770px) {
+	#canvas-container {
+		position: relative !important;
+		top: 0px !important;
+		right: 0px !important;
+		display: flex;
+		justify-content: center;
+		margin-bottom: -100px;
+		margin-top: -140px;
+	}
+	#canvas-container canvas {
+		width: 90vw !important;
+		height: 500px !important;
+	}
+	.main-content {
+		flex-direction: column-reverse !important;
+	}
+	.text-principal {
+		text-align: center !important;
+	}
+	.subheading {
+		text-align: center !important;
+	}
 }

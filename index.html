@@ -84,12 +84,15 @@
 		<!-- Page Content-->
 		<div class="container-fluid p-0">
 			<!-- About-->
-			<section class="resume-section" id="about">
-				<div class="resume-section-content">
-					<h1 class="mb-0">
-						Santiago Cortes
-						<span class="text-primary">Front-end developer</span>
-					</h1>
+			<section class="resume-section" style="overflow: hidden" id="about">
+				<div class="resume-section-content" style="position: relative">
+					<div class="main-content" style="display: flex">
+						<h1 class="mb-0 text-principal" style="width: fit-content">
+							Santiago Cortes
+							<span class="text-primary">Front-end developer</span>
+						</h1>
+						<div id="canvas-container"></div>
+					</div>
 					<div class="subheading mb-5">
 						Mexico, Puebla · (221) 415-7918 ·
 						<a href="mailto:name@email.com">santya.2003.06@gmail.com</a>
@@ -477,6 +480,7 @@
 			</section>
 			<hr class="m-0" />
 		</div>
+		<script type="module" src="/js/threeJs.js"></script>
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- Core theme JS-->
