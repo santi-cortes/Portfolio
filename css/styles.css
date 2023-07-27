@@ -11963,8 +11963,8 @@ a img {
 
 #canvas-container {
 	position: absolute;
-	top: -110px;
-	right: -110px;
+	top: -260px;
+	right: -260px;
 }
 
 @media (max-width: 1250px) {
@@ -11972,25 +11972,26 @@ a img {
 		width: 400px !important;
 	}
 	#canvas-container {
-		top: -100px;
-		right: -100px;
+		top: -230px;
+		right: -230px;
 	}
 	#canvas-container canvas {
-		width: 550px !important;
-		height: 550px !important;
+		width: 800px !important;
+		height: 800px !important;
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
 	.text-principal {
 		width: 100% !important;
 	}
 	#canvas-container {
-		top: -120px !important;
+		top: -270px !important;
+		right: -200px !important;
 	}
 	#canvas-container canvas {
-		width: 400px !important;
-		height: 400px !important;
+		width: 700px !important;
+		height: 700px !important;
 	}
 }
 
@@ -12001,12 +12002,37 @@ a img {
 		right: 0px !important;
 		display: flex;
 		justify-content: center;
-		margin-bottom: -100px;
-		margin-top: -140px;
+		margin-bottom: -230px;
+		margin-top: -240px;
 	}
 	#canvas-container canvas {
-		width: 90vw !important;
-		height: 500px !important;
+		width: 700px !important;
+		height: 700px !important;
+	}
+	.main-content {
+		flex-direction: column-reverse !important;
+	}
+	.text-principal {
+		text-align: center !important;
+	}
+	.subheading {
+		text-align: center !important;
+	}
+}
+
+@media (max-width: 400px) {
+	#canvas-container {
+		position: relative !important;
+		top: 0px !important;
+		right: 0px !important;
+		display: flex;
+		justify-content: center;
+		margin-bottom: -180px;
+		margin-top: -240px;
+	}
+	#canvas-container canvas {
+		width: 350px !important;
+		height: 600px !important;
 	}
 	.main-content {
 		flex-direction: column-reverse !important;

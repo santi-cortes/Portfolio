@@ -15,11 +15,11 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-renderer.setSize(400, 400);
+renderer.setSize(700, 700);
 const canvasContainer = document.getElementById('canvas-container');
 canvasContainer.appendChild(renderer.domElement);
 
-camera.position.z = 10.5;
+camera.position.z = 15;
 camera.position.y = 2;
 
 let model;
