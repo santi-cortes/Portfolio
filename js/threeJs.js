@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera(
 	1000
 );
 
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 renderer.setSize(400, 400);
 const canvasContainer = document.getElementById('canvas-container');
 canvasContainer.appendChild(renderer.domElement);
