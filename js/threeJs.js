@@ -25,7 +25,7 @@ camera.position.y = 2;
 let model;
 
 loader.load(
-	'./js/models/dog.glb',
+	'./js/dog.glb',
 	function (gltf) {
 		model = gltf.scene;
 		scene.add(model);
