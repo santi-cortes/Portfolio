@@ -79,12 +79,6 @@
 	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	:root {
-		scroll-behavior: smooth;
-	}
-}
-
 body {
 	margin: 0;
 	font-family: var(--bs-body-font-family);
@@ -681,16 +675,8 @@ progress {
 
 .p-0 {
 	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
 	height: 100vh;
-	scroll-behavior: smooth;
-
 	transition: all 1s ease;
-}
-
-.p-0 > section {
-	scroll-snap-align: start;
-	transition: scroll-snap-align 1s ease;
 }
 
 @media (min-width: 576px) {
@@ -12017,9 +12003,6 @@ a img {
 	.text-principal {
 		text-align: center !important;
 	}
-	.subheading {
-		text-align: center !important;
-	}
 }
 
 @media (max-width: 400px) {
@@ -12040,9 +12023,6 @@ a img {
 		flex-direction: column-reverse !important;
 	}
 	.text-principal {
-		text-align: center !important;
-	}
-	.subheading {
 		text-align: center !important;
 	}
 }
